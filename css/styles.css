@@ -118,11 +118,11 @@ img {
     margin-left: 52px;
 }
 
-.header-contacts .header-contacts__item + .header-contacts__item {
+.header-contacts__list .header-contacts__item + .header-contacts__item {
     margin-left: 50px;
 }
 
-.header-contacts {
+.header-contacts__list {
     display: flex;
     margin-left: auto;
 }
@@ -498,24 +498,24 @@ img {
 
 /* ##################### start features-section ##################### */
 
-.features-list {
+.features__list {
     display: flex;
 }
 
-.features-list .features-list__item + .features-list__item {
+.features__list .features__item + .features__item {
     margin-left: 30px;
 }
 
-.features-list__item {
+.features__item {
     flex-basis: calc(100% / 4);
 }
 
-.features-list__icon {
+.features__icon {
     width: 70px;
     height: 70px;
 }
 
-.features-list__content {
+.features__content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -525,7 +525,7 @@ img {
     margin-bottom: 30px;
 }
 
-.features-list__name {
+.features__name {
     margin-bottom: 10px;
     font-style: normal;
     font-size: 14px;
@@ -533,7 +533,7 @@ img {
     text-transform: uppercase;
 }
 
-.features-list__description {
+.features__description {
     font-style: normal;
     font-weight: 400;
     line-height: 1.7142;
@@ -545,7 +545,7 @@ img {
 
 /* ##################### start company works section ##################### */
 
-.company-works-section {
+.company-works {
     padding-top: 0;
 }
 
@@ -553,15 +553,15 @@ img {
     display: flex;
 }
 
-.company-works-list .company-works-list__item + .company-works-list__item {
+.company-works-list .company-works__item + .company-works__item {
     margin-left: 30px;
 }
 
-.company-works-list__content {
+.company-works__content {
     position: relative;
 }
 
-.company-works-list__description {
+.company-works__description {
     min-width: 100%;
     min-height: 70px;
     position: absolute;
@@ -572,7 +572,7 @@ img {
     background: rgba(47, 48, 58, 0.8);
 }
 
-.company-works-list__title {
+.company-works__work-title {
     font-size: 14px;
     line-height: calc(16 / 14);
     text-align: center;
@@ -580,8 +580,8 @@ img {
     color: var(--global-white-color);
 }
 
-.company-works-section__title,
-.company-team-section__title,
+.company-works__title,
+.company-team__title,
 .clients-section__title {
     margin-bottom: 50px;
     font-style: normal;
@@ -595,19 +595,19 @@ img {
 
 /* ##################### start company team section ##################### */
 
-.company-team-section {
+.company-team {
     background-color: var(--company-team-background-color);
 }
 
-.company-employees-list {
+.company-team__list {
     display: flex;
 }
 
-.company-employees-list .company-employees-list__item + .company-employees-list__item {
+.company-team__list .company-team__item + .company-team__item {
     margin-left: 30px;
 }
 
-.company-employees-list__item {
+.company-team__item {
     background-color: var(--global-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -638,16 +638,16 @@ img {
     color: var(--global-lightblack-color);
 }
 
-.employee-social-list {
+.employee-social__list {
     display: flex;
     justify-content: center;
 }
 
-.employee-social-list .employee-social-list__item + .employee-social-list__item {
+.employee-social__list .employee-social__item + .employee-social__item {
     margin-left: 10px;
 }
 
-.employee-social-list__link {
+.employee-social__link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -662,14 +662,14 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.employee-social-list__icon {
+.employee-social__icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
 }
 
-.employee-social-list__link:hover,
-.employee-social-list__link:focus {
+.employee-social__link:hover,
+.employee-social__link:focus {
     color: var(--global-white-color);
     background-color: var(--global-sky-color);
 }
@@ -678,16 +678,16 @@ img {
 
 /* ##################### start clients section ##################### */
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
 }
 
-.clients-list .clients-list__item + .clients-list__item {
+.clients__list .clients__item + .clients__item {
     margin-left: 30px;
 }
 
-.clients-list__link {
+.clients__link {
     width: 170px;
     height: 92px;
     display: flex;
@@ -703,14 +703,14 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.clients-list__icon {
+.clients__icon {
     width: 106px;
     height: 60px;
     fill: currentColor;
 }
 
-.clients-list__link:hover,
-.clients-list__link:focus {
+.clients__link:hover,
+.clients__link:focus {
     color: var(--global-sky-color);
     background-color: var(--global-white-color);
     border: 1px solid var(--global-sky-color);
@@ -722,7 +722,7 @@ img {
 
 /* hide h1, h2 */
 .projects-section__title,
-.features-section__title {
+.features__title {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -735,17 +735,17 @@ img {
     overflow: hidden;
 }
 
-.projects-filter-list {
+.projects-filter__list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.projects-filter-list .projects-filter-list__item + .projects-filter-list__item {
+.projects-filter__list .projects-filter__item + .projects-filter__item {
     margin-left: 8px;
 }
 
-.projects-filter-list__button {
+.projects-filter__button {
     background: var(--projects-filter-button-background);
     padding: 6px 22px;
     font-family: "Roboto", sans-serif;
@@ -765,28 +765,28 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.projects-filter-list__button:hover,
-.projects-filter-list__button:focus {
+.projects-filter__button:hover,
+.projects-filter__button:focus {
     background-color: var(--global-sky-color);
     color: var(--global-white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-list {
+.projects__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
 }
 
-.projects-list__item {
+.projects__item {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
 
-.projects-list__link {
+.projects__link {
     display: inline-block;
     text-decoration: none;
     color: var(--global-blackgray-color);
@@ -796,20 +796,20 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.projects-list__link:hover,
-.projects-list__link:focus {
+.projects__link:hover,
+.projects__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*############### Start Projects description animation #################*/
 
-.projects-list__description-container {
+.projects__description-container {
     position: relative;
     overflow: hidden;
 }
 
-.projects-list__description-container::before {
+.projects__description-container::before {
     display: inline-block;
     content: "";
     position: absolute;
@@ -824,7 +824,7 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.projects-list__project-description {
+.projects__project-description {
     position: absolute;
     top: 0;
     left: 0;
@@ -842,17 +842,17 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.projects-list__item:hover .projects-list__description-container::before,
-.projects-list__item:hover .projects-list__project-description {
+.projects__item:hover .projects__description-container::before,
+.projects__item:hover .projects__project-description {
     transform: translateY(0);
 }
 
-.projects-list__link:focus .projects-list__description-container::before,
-.projects-list__link:focus .projects-list__project-description {
+.projects__link:focus .projects__description-container::before,
+.projects__link:focus .projects__project-description {
     transform: translateY(0);
 }
 
-.projects-list__description-text {
+.projects__description-text {
     width: 322px;
     font-size: 18px;
     line-height: calc(28 / 18);
@@ -861,13 +861,13 @@ img {
 
 /*############### End Projects description animation #################*/
 
-.projects-list__project-meta {
+.projects__project-meta {
     padding: 20px 24px;
     border: 1px solid var(--projects-item-border-color);
     border-top: none;
 }
 
-.projects-list__title {
+.projects__title {
     margin-bottom: 4px;
     font-style: normal;
     font-size: 18px;
@@ -876,7 +876,7 @@ img {
     color: var(--global-blackgray-color);
 }
 
-.projects-list__type {
+.projects__type {
     font-style: normal;
     font-size: 16px;
     line-height: 1.875;
@@ -906,11 +906,11 @@ img {
     color: var(--global-white-color);
 }
 
-.footer-contacts-list li:not(:last-child) {
+.footer-contacts__list li:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-contacts-list__physical-address {
+.footer-contacts__physical-address {
     display: block;
     margin-bottom: 9px;
     font-style: normal;
@@ -919,7 +919,7 @@ img {
     color: var(--global-white-color);
 }
 
-.footer-contacts-list__link {
+.footer-contacts__link {
     font-style: normal;
     line-height: 1.7142;
     text-decoration: none;
@@ -930,8 +930,8 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.footer-contacts-list__link:hover,
-.footer-contacts-list__link:focus {
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
     color: var(--global-sky-color);
 }
 
@@ -949,22 +949,22 @@ img {
     margin-left: 70px;
 }
 
-.footer-social-list {
+.footer-social__list {
     display: flex;
     justify-content: center;
 }
 
-.footer-social-list .footer-social-list__item + .footer-social-list__item {
+.footer-social__list .footer-social__item + .footer-social__item {
     margin-left: 10px;
 }
 
-.footer-social-list__icon {
+.footer-social__icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
 }
 
-.footer-social-list__link {
+.footer-social__link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -979,8 +979,8 @@ img {
     transition-timing-function: var(--global-transition-timing-function);
 }
 
-.footer-social-list__link:hover,
-.footer-social-list__link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
     background-color: var(--global-sky-color);
 }
 
