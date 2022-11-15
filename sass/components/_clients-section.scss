@@ -1,10 +1,5 @@
 .clients-section__title {
-    margin-bottom: 50px;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 1.1666;
-    text-align: center;
-    color: $global-blackgray-color;
+    @extend %section-title;
 }
 
 .clients__list {

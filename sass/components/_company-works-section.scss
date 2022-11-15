@@ -1,3 +1,7 @@
+.company-works__title {
+    @extend %section-title;
+}
+
 .company-works {
     padding-top: 0;
 }
@@ -31,13 +35,4 @@
     text-align: center;
     text-transform: uppercase;
     color: $global-white-color;
-}
-
-.company-works__title {
-    margin-bottom: 50px;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 1.1666;
-    text-align: center;
-    color: $global-blackgray-color;
 }

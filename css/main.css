@@ -1,4 +1,27 @@
 @charset "UTF-8";
+.projects-section__title, .features__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clients-section__title, .company-team__title, .company-works__title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.1666;
+  text-align: center;
+  color: #212121;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -460,20 +483,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.features__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .features__list {
   display: flex;
 }
@@ -549,24 +558,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-.company-works__title {
-  margin-bottom: 50px;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.1666;
-  text-align: center;
-  color: #212121;
-}
-
-.company-team__title {
-  margin-bottom: 50px;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.1666;
-  text-align: center;
-  color: #212121;
 }
 
 .company-team {
@@ -645,15 +636,6 @@ img {
   fill: currentColor;
 }
 
-.clients-section__title {
-  margin-bottom: 50px;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.1666;
-  text-align: center;
-  color: #212121;
-}
-
 .clients__list {
   display: flex;
   justify-content: center;
@@ -688,20 +670,6 @@ img {
   width: 106px;
   height: 60px;
   fill: currentColor;
-}
-
-.projects-section__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .projects-filter__list {
