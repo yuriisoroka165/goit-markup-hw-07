@@ -1,20 +1,18 @@
 :root {
     --global-lightblack-color: #757575;
-    --header-border-color: #ececec;
-    --hero-button-background-active-color: #188ce8;
-    --skill-icon-backgruond: #f5f4fa;
-    --company-team-background-color: #f5f4fa;
-    --social-icons-fill: #afb1b8;
-    --projects-filter-button-background: #f5f4fa;
-    --projects-item-border-color: #eeeeee;
+    --header-border-color: #ECECEC;
+    --hero-button-background-active-color: #188CE8;
+    --social-icons-fill: #AFB1B8;
+    --projects-item-border-color: #EEEEEE;
     --project-description-background: rgba(33, 150, 243, 0.9);
-    --hero-footer-background-color: #2f303a;
+    --hero-footer-background-color: #2F303A;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
     --footer-social-link-bg-color: rgba(255, 255, 255, 0.1);
-    --global-white-color: #ffffff;
-    --global-sky-color: #2196f3;
+    --global-white-color: #FFFFFF;
+    --global-sky-color: #2196F3;
     --global-black-color: #000000;
     --global-blackgray-color: #212121;
+    --global-lightgray-color: #F5F4FA;
     --modal-window-backdrop-color: rgba(0, 0, 0, 0.2);
     --global-transition-duration: 250ms;
     --global-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -211,6 +209,8 @@ img {
 
 /* ################## End header #################### */
 
+/* ################## start hero #################### */
+
 .hero-section {
     max-width: 1600px;
     min-height: 600px;
@@ -270,6 +270,8 @@ img {
 .hero-section__button:active {
     background-color: var(--hero-button-background-active-color);
 }
+
+/* ################## end hero #################### */
 
 /* ##################### Start Modal window #################### */
 
@@ -520,7 +522,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 120px;
-    background: var(--skill-icon-backgruond);
+    background: var(--global-lightgray-color);
     border-radius: 4px;
     margin-bottom: 30px;
 }
@@ -596,7 +598,7 @@ img {
 /* ##################### start company team section ##################### */
 
 .company-team {
-    background-color: var(--company-team-background-color);
+    background-color: var(--global-lightgray-color);
 }
 
 .company-team__list {
@@ -746,7 +748,7 @@ img {
 }
 
 .projects-filter__button {
-    background: var(--projects-filter-button-background);
+    background: var(--global-lightgray-color);
     padding: 6px 22px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
